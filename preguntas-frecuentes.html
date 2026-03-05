@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | ACUATURIS SAC</title>
+    <meta name="description" content="Resuelve tus dudas sobre los tours a las Islas Guañape con ACUATURIS SAC.">
+
+    <!-- Fonts and External Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .faq-page-content {
+            padding: 80px 0;
+            background-color: #f8fafc;
+            min-height: 60vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ACUATURIS <span class="highlight">SAC</span></a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a></li>
+                <li><a href="index.html#tour" data-i18n="nav_tour">El Tour</a></li>
+                <li><a href="index.html#itinerario" data-i18n="nav_itinerary">Itinerario</a></li>
+                <li><a href="index.html#politicas" data-i18n="nav_policies">Políticas</a></li>
+                <li><a href="preguntas-frecuentes.html" class="active" style="color: var(--primary);"
+                        data-i18n="nav_faq">Preguntas Frecuentes</a></li>
+                <li><a href="index.html#contacto" class="btn-primary" data-i18n="nav_book">Reservar</a></li>
+                <li>
+                    <select id="language-selector" class="lang-select">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <option value="it">IT</option>
+                        <option value="de">DE</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero"
+        style="height: 50vh; min-height: 400px; background: url('assets/Imagen8.jpeg') center/cover no-repeat fixed;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container" data-aos="fade-up" style="margin-top: 60px;">
+            <h1 data-i18n="faq_hero_title">Preguntas <span class="text-gradient">Frecuentes</span></h1>
+            <p data-i18n="faq_hero_subtitle"
+                style="font-size: 1.2rem; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Todo lo que necesitas saber antes de tu aventura con nosotros.</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="faq-page-content">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q1">¿Qué debo llevar al tour?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a1">Recomendamos llevar bloqueador solar, gorra, lentes de sol, cámara de
+                            fotos, casaca
+                            cortavientos y pastillas para el mareo si eres sensible al movimiento del mar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q5">¿Cuánto dura el tour?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a5">El tour tiene una duración total promedio de 2 horas y media.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q6">¿Desde dónde sale el tour?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a6">El tour sale desde el desembarcadero pesquero de Puerto Morín.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q7">¿Cuántas personas van en la embarcación?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a7">La embarcación tiene una capacidad total de 26 pasajeros.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q8">¿Cómo reservo mi cupo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a8">Cierre directo al Whatsapp indicado para reservar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section" data-aos="fade-up" style="margin-top: 80px; text-align: center;">
+                <h2 style="font-size: 2.5rem; color: var(--primary); font-weight: 800; margin-bottom: 15px;"
+                    data-i18n="about_map_title">Cómo llegar hasta la <span class="text-dark-blue">aventura</span></h2>
+                <p style="font-size: 1.1rem; color: #666; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;"
+                    data-i18n="about_map_subtitle">Encuéntranos en el Desembarcadero Artesanal de Puerto Morín y
+                    prepárate para zarpar.</p>
+
+                <div class="map-container"
+                    style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Desembarcadero%20Puerto%20Morin&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #1a202c; color: #e2e8f0; text-align: center; padding: 40px 0;">
+        <div class="container">
+            <h3
+                style="color: white; margin-bottom: 10px; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem;">
+                ACUATURIS <span style="color: var(--primary);">SAC</span></h3>
+            <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">La joya marina de la región La Libertad.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px;">
+                <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
+                    style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-tiktok"></i></a>
+            </div>
+            <p style="font-size: 0.85rem; border-top: 1px solid #334155; padding-top: 20px; color: #64748b;">&copy; 2026
+                ACUATURIS SAC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                duration: 800,
+                offset: 100,
+                once: true
+            });
+        });
+    </script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/51961020784?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20el%20tour%20a%20las%20Islas%20Gua%C3%B1ape%20y%20quisiera%20informaci%C3%B3n%20sobre%20disponibilidad%20y%20reservas."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>

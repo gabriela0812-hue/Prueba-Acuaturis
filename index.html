@@ -4,12 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACUATURIS SAC | Turismo Islas Guañape</title>
+    <!-- Basic SEO Meta Tags -->
+    <title>ACUATURIS SAC | Tour Islas Guañape, La Libertad - Puerto Morín</title>
     <meta name="description"
-        content="Descubre la magia de las Islas Guañape con ACUATURIS SAC. Tours exclusivos en La Libertad, Perú. Avistamiento de fauna marina y aventura.">
+        content="Descubre la magia de las Islas Guañape con ACUATURIS SAC. Tours exclusivos desde Puerto Morín, La Libertad, Perú. Avistamiento de lobos marinos, pingüinos de Humboldt y aves guaneras. ¡Reserva ahora!">
+    <meta name="keywords"
+        content="Islas Guañape, turismo La Libertad, tours Puerto Morín, ACUATURIS SAC, lobos marinos Perú, pingüinos Humboldt, aves guaneras, paseo en lancha La Libertad, Trujillo turismo">
+    <meta name="author" content="ACUATURIS SAC">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO: Canonical URL -->
+    <link rel="canonical" href="https://acuaturissac.com/">
+
+    <!-- SEO: Open Graph para redes sociales y WhatsApp -->
+    <meta property="og:title" content="Tour Islas Guañape La Libertad | ACUATURIS SAC">
+    <meta property="og:description"
+        content="Avista lobos marinos, pingüinos de Humboldt y aves guaneras. Tour guiado desde Puerto Morín, La Libertad. ¡Reserva tu lugar!">
+    <meta property="og:image" content="https://acuaturissac.com/img/islas-guanape.jpg">
+    <meta property="og:url" content="https://acuaturissac.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_PE">
+    <meta property="og:site_name" content="ACUATURIS SAC">
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tour Islas Guañape La Libertad | ACUATURIS SAC">
+    <meta name="twitter:description"
+        content="Avista lobos marinos, pingüinos de Humboldt y aves guaneras. Tour guiado desde Puerto Morín, La Libertad.">
+    <meta name="twitter:image" content="https://acuaturissac.com/img/islas-guanape.jpg">
+
+    <!-- SEO: Datos estructurados Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      "name": "Tour Islas Guañape - Avistamiento de Fauna Marina",
+      "description": "Tour de avistamiento de fauna marina en las Islas Guañape, La Libertad, Perú. Incluye avistamiento de lobos marinos, pingüinos de Humboldt y aves guaneras.",
+      "url": "https://acuaturissac.com/",
+      "image": "https://acuaturissac.com/img/islas-guanape.jpg",
+      "touristType": "Ecoturismo, Avistamiento de fauna",
+      "itinerary": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Reunión en Puerto Morín a las 09:00 AM"},
+          {"@type": "ListItem", "position": 2, "name": "Zarpe hacia las Islas Guañape a las 09:30 AM"},
+          {"@type": "ListItem", "position": 3, "name": "Avistamiento de fauna marina a las 10:15 AM"},
+          {"@type": "ListItem", "position": 4, "name": "Retorno a Puerto Morín a las 12:00 PM"}
+        ]
+      },
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "ACUATURIS SAC",
+        "telephone": "+51961020784",
+        "url": "https://acuaturissac.com/",
+        "sameAs": ["https://www.facebook.com/acuaturissac", "https://www.instagram.com/acuaturissac"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Puerto Morín",
+          "addressRegion": "La Libertad",
+          "addressCountry": "PE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-8.5820",
+          "longitude": "-78.9760"
+        }
+      },
+      "inLanguage": "es-PE"
+    }
+    </script>
+
+
+    <!-- Fonts and External Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -29,10 +98,11 @@
             </button>
             <ul class="nav-links">
                 <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a></li>
                 <li><a href="#tour" data-i18n="nav_tour">El Tour</a></li>
                 <li><a href="#itinerario" data-i18n="nav_itinerary">Itinerario</a></li>
                 <li><a href="#politicas" data-i18n="nav_policies">Políticas</a></li>
-                <li><a href="#faq" data-i18n="nav_faq">Preguntas Frecuentes</a></li>
+                <li><a href="preguntas-frecuentes.html" data-i18n="nav_faq">Preguntas Frecuentes</a></li>
                 <li><a href="#contacto" class="btn-primary" data-i18n="nav_book">Reservar</a></li>
                 <li>
                     <select id="language-selector" class="lang-select">
@@ -49,9 +119,12 @@
 
     <!-- Hero Section -->
     <header id="inicio" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="assets/Video2.mp4" type="video/mp4">
+        </video>
         <div class="hero-overlay"></div>
         <div class="hero-content container" data-aos="fade-up">
-            <h1 data-i18n="hero_title">Descubre las <br><span class="text-gradient">Islas Guañape</span></h1>
+            <h1 data-i18n="hero_title">Vive la experiencia de <br><span class="text-gradient">Islas Guañape</span></h1>
             <p data-i18n="hero_subtitle">Una aventura inolvidable en el corazón del mar de La Libertad.</p>
             <div class="hero-buttons">
                 <a href="#tour" class="btn-primary" data-i18n="hero_btn_details">Ver Detalles</a>
@@ -65,8 +138,11 @@
         <div class="container about-grid">
             <div class="about-text" data-aos="fade-right">
                 <h2 class="section-title" data-i18n="about_title">La joya Marina de la región La Libertad</h2>
-                <p data-i18n="about_desc">Las Islas Guañape son un área natural protegida, hogar de una inmensa
-                    biodiversidad. Con ACUATURIS SAC, vivirás una experiencia segura y respetuosa con el medio ambiente.
+                <p data-i18n="about_desc">Las Islas Guañape son un <strong>área natural protegida</strong>, hogar de una
+                    <strong>inmensa
+                        biodiversidad</strong>. Con <span class="text-dark-blue">ACUATURIS SAC</span>, vivirás una
+                    <strong>experiencia segura y
+                        respetuosa</strong> con el medio ambiente.
                 </p>
                 <ul class="feature-list">
                     <li><i class="fas fa-check-circle"></i> <span data-i18n="about_feat_1">Avistamiento de lobos marinos
@@ -76,8 +152,9 @@
                     <li><i class="fas fa-check-circle"></i> <span data-i18n="about_feat_3">Paisajes impresionantes y
                             aventura en alta mar.</span></li>
                     <li><i class="fas fa-check-circle"></i> <span data-i18n="about_feat_4">Guías expertos y seguridad
-                            garantizada.</span></li>
-                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about_feat_5">Embarcación de doble motor
+                            marineros con amplia experiencia.</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about_feat_5">Embarcación de <span
+                                class="text-dark-blue">doble motor</span>
                             para un traslado más rápido y seguro.</span></li>
                 </ul>
 
@@ -92,13 +169,18 @@
                                 Morín</span></li>
                         <li><i class="fas fa-ship"></i> <span data-i18n="included_3">Transporte en embarcación
                                 (lancha)</span></li>
-                        <li><i class="fas fa-user-tie"></i> <span data-i18n="included_4">Tour guiado por un Guía oficial
-                                de Turismo</span></li>
+                        <li><i class="fas fa-user-tie"></i> <span data-i18n="included_4">Tour guiado</span></li>
                     </ul>
                 </div>
             </div>
             <div class="about-image" data-aos="fade-left">
-                <div class="image-placeholder" id="about-img-placeholder"></div>
+                <!-- SEO: Imagen real con alt descriptivo -->
+                <img src="img/islas-guanape-lobos-marinos.jpg"
+                    alt="Lobos marinos y pingüinos de Humboldt en las Islas Guañape, La Libertad, Perú" loading="lazy"
+                    width="600" height="600"
+                    onerror="this.style.display='none'; document.getElementById('about-img-placeholder').style.display='block'"
+                    style="border-radius: 20px; box-shadow: var(--shadow); object-fit: cover; width: 100%;">
+                <div class="image-placeholder" id="about-img-placeholder" style="display: none;"></div>
             </div>
         </div>
     </section>
@@ -153,31 +235,59 @@
             <div class="swiper gallerySwiper" data-aos="zoom-in" style="padding: 20px 0;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="gallery-item item-1"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen1.webp"
+                                alt="Tour en lancha hacia las Islas Guañape, La Libertad, Perú" loading="lazy"
+                                width="300" height="300">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-item item-2"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen4.webp" alt="Lobos marinos en las Islas Guañape" loading="lazy"
+                                width="300" height="300">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-item item-3"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen5.jpeg" alt="Pingüinos de Humboldt en las Islas Guañape, Perú"
+                                loading="lazy" width="300" height="300">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-item item-4"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen3.webp" alt="Aves guaneras en su hábitat natural, Islas Guañape"
+                                loading="lazy" width="300" height="300">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-item item-5"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen14.jpeg" alt="Paisaje marino desde la lancha en tour ACUATURIS SAC"
+                                loading="lazy" width="300" height="300">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-item item-6"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen6.jpeg" alt="Avistamiento de fauna marina en las Islas Guañape"
+                                loading="lazy" width="300" height="300">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-item item-7"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen7.jpeg" alt="Turistas disfrutando el tour a las Islas Guañape"
+                                loading="lazy" width="300" height="300">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-item item-8"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen15.jpeg" alt="Muelle de Puerto Morín, punto de partida del tour"
+                                loading="lazy" width="300" height="300">
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery-item item-9"></div>
+                        <div class="gallery-item">
+                            <img src="assets/Imagen16.jpeg" alt="Vista panorámica de las Islas Guañape desde el mar"
+                                loading="lazy" width="300" height="300">
+                        </div>
                     </div>
                 </div>
                 <!-- Pagination & Nav -->
@@ -235,68 +345,6 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="section faq-section">
-        <div class="container">
-            <h2 class="section-title center" data-aos="fade-up" data-i18n="faq_title">Preguntas Frecuentes</h2>
-            <div class="faq-container">
-                <div class="faq-item" data-aos="fade-up">
-                    <div class="faq-question">
-                        <h3 data-i18n="faq_q1">¿Qué debo llevar al tour?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq_a1">Recomendamos llevar bloqueador solar, gorra, lentes de sol, casaca
-                            cortavientos y pastillas para el mareo si eres sensible al movimiento del mar.</p>
-                    </div>
-                </div>
-
-
-                <!-- Nuevas Preguntas Frecuentes -->
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="faq-question">
-                        <h3 data-i18n="faq_q5">¿Cuánto dura el tour?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq_a5">El tour tiene una duración total promedio de 2 horas y media a 3 horas.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="faq-question">
-                        <h3 data-i18n="faq_q6">¿Desde dónde sale el tour?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq_a6">El tour sale desde el desembarcadero pesquero de Puerto Morín.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                    <div class="faq-question">
-                        <h3 data-i18n="faq_q7">¿Cuántas personas van por embarcación?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq_a7">La embarcación tiene una capacidad total de 30 pasajeros.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="700">
-                    <div class="faq-question">
-                        <h3 data-i18n="faq_q8">¿Cómo reservo mi cupo?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p data-i18n="faq_a8">Cierre directo al Whatsapp indicado para reservar.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact & Booking Section -->
     <section id="contacto" class="section contact-section"
         style="background-color: #f8f9fa; padding: 80px 0; text-align: center;">
@@ -307,7 +355,7 @@
                 Contáctanos directamente por WhatsApp para consultar disponibilidad y asegurar tu lugar.</p>
 
             <div data-aos="zoom-in">
-                <a href="https://wa.me/51961020784?text=Hola,%20deseo%20recibir%20m%C3%A1s%20informaci%C3%B3n%20y%20reservar%20un%20tour%20a%20las%20Islas%20Gua%C3%B1ape."
+                <a href="https://wa.me/51961020784?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20el%20tour%20a%20las%20Islas%20Gua%C3%B1ape%20y%20quisiera%20informaci%C3%B3n%20sobre%20disponibilidad%20y%20reservas."
                     target="_blank" class="btn-primary"
                     style="background-color: #25D366; font-size: 1.2rem; padding: 15px 40px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); border-radius: 50px; text-decoration: none; color: white; font-weight: bold;">
                     <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
@@ -334,7 +382,8 @@
             <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">La joya marina de la región La Libertad.
             </p>
             <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px;">
-                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
+                    style="color: white; font-size: 1.2rem; transition: color 0.3s;"
                     onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
                         class="fab fa-facebook-f"></i></a>
                 <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
@@ -380,6 +429,12 @@
             });
         });
     </script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/51961020784?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20el%20tour%20a%20las%20Islas%20Gua%C3%B1ape%20y%20quisiera%20informaci%C3%B3n%20sobre%20disponibilidad%20y%20reservas."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Lightbox Modal para Galería -->
     <div id="lightbox" class="lightbox">
         <span class="close-lightbox">&times;</span>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos | ACUATURIS SAC</title>
+    <meta name="description"
+        content="Conoce más sobre ACUATURIS SAC. Somos un operador especializado en experiencias marinas en las Islas Guañape.">
+
+    <!-- Fonts and External Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Hero section is now handled by styles.css classes */
+        .about-page-content {
+            padding: 80px 0;
+            background-color: #f8fafc;
+        }
+
+        .about-text-content {
+            background-color: #2b3a55;
+            /* Color similar al de la imagen proporcionada */
+            color: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .about-text-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+            font-weight: 800;
+        }
+
+        .about-text-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #e2e8f0;
+        }
+
+        .about-text-content p:last-child {
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 0;
+            margin-top: 30px;
+        }
+
+        .vision-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .vision-img-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .vision-img-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .vision-img-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ACUATURIS <span class="highlight">SAC</span></a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="quienes-somos.html" class="active" style="color: var(--primary);"
+                        data-i18n="nav_about">Quiénes Somos</a></li>
+                <li><a href="index.html#tour" data-i18n="nav_tour">El Tour</a></li>
+                <li><a href="index.html#itinerario" data-i18n="nav_itinerary">Itinerario</a></li>
+                <li><a href="index.html#politicas" data-i18n="nav_policies">Políticas</a></li>
+                <li><a href="preguntas-frecuentes.html" data-i18n="nav_faq">Preguntas Frecuentes</a></li>
+                <li><a href="index.html#contacto" class="btn-primary" data-i18n="nav_book">Reservar</a></li>
+                <li>
+                    <select id="language-selector" class="lang-select">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <option value="it">IT</option>
+                        <option value="de">DE</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero"
+        style="height: 50vh; min-height: 400px; background: url('assets/Imagen14.jpeg') center/cover no-repeat fixed;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container" data-aos="fade-up" style="margin-top: 60px;">
+            <h1 data-i18n="about_hero_title">Quiénes <span class="text-gradient">Somos</span></h1>
+            <p data-i18n="about_hero_subtitle"
+                style="font-size: 1.2rem; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Pasión por el mar y compromiso con la conservación de la vida salvaje.</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="about-page-content">
+        <div class="container">
+            <div class="about-text-content" data-aos="fade-up">
+                <h2 data-i18n="about_page_title">Quiénes Somos</h2>
+
+                <p data-i18n="about_page_p1">En <strong>ACUATURIS – Acuacultura y Turismo S.A.C.</strong> somos un
+                    operador especializado en
+                    experiencias marinas en las Islas Guañape. Fundados en 2015 por pescadores y biólogos apasionados
+                    por el mar, combinamos conocimiento técnico y experiencia directa para ofrecer recorridos seguros,
+                    auténticos y responsables.</p>
+
+                <p data-i18n="about_page_p2">Operamos con una embarcación bi-motor equipada con altos estándares de
+                    seguridad, pólizas
+                    certificadas y guías oficiales de turismo, garantizando una experiencia segura, auténtica y
+                    responsable.</p>
+
+                <p data-i18n="about_page_p3">Más que un paseo en bote, ofrecemos una conexión real con la naturaleza: el
+                    avistamiento de lobos
+                    marinos, el emblemático Pingüino de Humboldt, aves guaneras y la impresionante biodiversidad que
+                    habita en este paraíso poco explorado del norte del Perú. Creemos en un turismo consciente,
+                    sostenible y educativo, donde cada visitante no solo disfruta la aventura, sino que también
+                    comprende la importancia de conservar y proteger nuestros ecosistemas marinos.</p>
+
+                <p data-i18n="about_page_p4">En ACUATURIS, el mar no es un destino... es nuestra identidad.</p>
+            </div>
+
+            <!-- Images Grid -->
+            <div class="vision-images">
+                <div class="vision-img-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/Imagen9.jpeg" alt="Equipo de Acuaturis en lancha">
+                </div>
+                <div class="vision-img-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/Imagen20.jpeg" alt="Lobos marinos en su hábitat">
+                </div>
+                <div class="vision-img-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/Imagen21.jpeg" alt="Vista de las Islas Guañape">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Mismo del index) -->
+    <footer style="background-color: #1a202c; color: #e2e8f0; text-align: center; padding: 40px 0;">
+        <div class="container">
+            <h3
+                style="color: white; margin-bottom: 10px; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem;">
+                ACUATURIS <span style="color: var(--primary);">SAC</span></h3>
+            <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">La joya marina de la región La Libertad.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px;">
+                <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
+                    style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-tiktok"></i></a>
+            </div>
+            <p style="font-size: 0.85rem; border-top: 1px solid #334155; padding-top: 20px; color: #64748b;">&copy; 2026
+                ACUATURIS SAC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                duration: 800,
+                offset: 100,
+                once: true
+            });
+        });
+    </script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/51961020784?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20el%20tour%20a%20las%20Islas%20Gua%C3%B1ape%20y%20quisiera%20informaci%C3%B3n%20sobre%20disponibilidad%20y%20reservas."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Lightbox Modal para Galería -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+</body>
+
+</html>

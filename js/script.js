@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const elements = document.querySelectorAll('[data-i18n]');
         elements.forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (translations[lang] && translations[lang][key]) {
+            if (typeof translations !== 'undefined' && translations[lang] && translations[lang][key]) {
                 // Check if element contains HTML (like the hero title with span)
                 if (translations[lang][key].includes('<')) {
                     el.innerHTML = translations[lang][key];
@@ -101,6 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update html lang attribute
         document.documentElement.lang = lang;
+
+        // Save selected language to localStorage
+        localStorage.setItem('selectedLang', lang);
     }
 
     if (langSelector) {
@@ -109,28 +112,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Initialize language from localStorage or default to 'es'
+    const savedLang = localStorage.getItem('selectedLang') || 'es';
+    if (savedLang !== 'es') {
+        updateLanguage(savedLang);
+    }
+
+    // Set the selector to the correct value
+    if (langSelector) {
+        langSelector.value = savedLang;
+    }
+
     // Lightbox Logic
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const closeBtn = document.querySelector('.close-lightbox');
-    const galleryContainer = document.querySelector('.gallerySwiper');
 
+    // Elements that trigger the lightbox
+    const galleryContainer = document.querySelector('.gallerySwiper');
+    const visionImagesContainer = document.querySelector('.vision-images');
+
+    // Function to open lightbox with an image source
+    function openLightbox(imgElement) {
+        if (lightbox && lightboxImg && imgElement && imgElement.src) {
+            lightbox.style.display = "block";
+            lightboxImg.src = imgElement.src;
+            lightboxImg.alt = imgElement.alt || ''; // Accesibilidad: pasar el alt también
+        }
+    }
+
+    // Listener for Gallery Images (index.html)
     if (galleryContainer) {
         galleryContainer.addEventListener('click', (e) => {
             const item = e.target.closest('.swiper-slide');
             if (!item) return;
 
-            // Get background image url from the computed style
-            const style = window.getComputedStyle(item);
-            const backgroundImage = style.backgroundImage;
+            // Get src from the real <img> tag
+            const img = item.querySelector('img');
+            openLightbox(img);
+        });
+    }
 
-            // Extract url from "url('...')"
-            const url = backgroundImage.slice(4, -1).replace(/"/g, "");
+    // Listener for Vision Images (quienes-somos.html)
+    if (visionImagesContainer) {
+        visionImagesContainer.addEventListener('click', (e) => {
+            // Find if the clicked element or its parent is the image card
+            const imgCard = e.target.closest('.vision-img-card');
+            if (!imgCard) return;
 
-            if (lightbox && lightboxImg && url && url !== "none") {
-                lightbox.style.display = "block";
-                lightboxImg.src = url;
-            }
+            // Get the image element inside the card
+            const img = imgCard.querySelector('img');
+            openLightbox(img);
         });
     }
 
