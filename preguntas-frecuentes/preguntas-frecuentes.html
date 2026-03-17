@@ -63,7 +63,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -83,19 +83,25 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">ACUATURIS <span class="highlight">SAC</span></a>
+            <a href="../index.html" class="logo">ACUATURIS <span class="highlight">SAC</span></a>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
-                <li><a href="quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a></li>
-                <li><a href="index.html#tour" data-i18n="nav_tour">El Tour</a></li>
-                <li><a href="index.html#itinerario" data-i18n="nav_itinerary">Itinerario</a></li>
-                <li><a href="index.html#politicas" data-i18n="nav_policies">Políticas</a></li>
-                <li><a href="preguntas-frecuentes.html" class="active" style="color: var(--primary);"
-                        data-i18n="nav_faq">Preguntas Frecuentes</a></li>
-                <li><a href="index.html#contacto" class="btn-primary" data-i18n="nav_book">Reservar</a></li>
+                <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="../quienes-somos/quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a></li>
+                <li><a href="../Tour-islas-guanape/Tour-islas-guanape.html" data-i18n="nav_tour">Tour Islas Guañape</a>
+                </li>
+                <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html" class="active"
+                        style="color: var(--primary);" data-i18n="nav_faq">Preguntas Frecuentes</a></li>
+                <li>
+                    <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        style="font-size: 1.4rem; color: #1877F2; margin-right: 15px; display: flex; align-items: center;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li><a href="../Inicio/index.html#contacto" class="btn-primary" data-i18n="nav_book">Reservar</a></li>
                 <li>
                     <select id="language-selector" class="lang-select">
                         <option value="es">ES</option>
@@ -182,7 +188,7 @@
             <!-- Map Section -->
             <div class="map-section" data-aos="fade-up" style="margin-top: 80px; text-align: center;">
                 <h2 style="font-size: 2.5rem; color: var(--primary); font-weight: 800; margin-bottom: 15px;"
-                    data-i18n="about_map_title">Cómo llegar hasta la <span class="text-dark-blue">aventura</span></h2>
+                    data-i18n="about_map_title">¿Cómo llegar hasta la <span class="text-dark-blue">aventura?</span></h2>
                 <p style="font-size: 1.1rem; color: #666; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;"
                     data-i18n="about_map_subtitle">Encuéntranos en el Desembarcadero Artesanal de Puerto Morín y
                     prepárate para zarpar.</p>
@@ -204,8 +210,8 @@
             <h3
                 style="color: white; margin-bottom: 10px; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem;">
                 ACUATURIS <span style="color: var(--primary);">SAC</span></h3>
-            <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">La joya marina de la región La Libertad.
-            </p>
+            <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">Tu mejor opción para visitar Islas
+                Guañape.</p>
             <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px;">
                 <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
                     style="color: white; font-size: 1.2rem; transition: color 0.3s;"
@@ -226,8 +232,8 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/translations.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             AOS.init({

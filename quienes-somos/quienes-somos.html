@@ -59,7 +59,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -136,19 +136,26 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">ACUATURIS <span class="highlight">SAC</span></a>
+            <a href="../index.html" class="logo">ACUATURIS <span class="highlight">SAC</span></a>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
-                <li><a href="quienes-somos.html" class="active" style="color: var(--primary);"
+                <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="../quienes-somos/quienes-somos.html" class="active" style="color: var(--primary);"
                         data-i18n="nav_about">Quiénes Somos</a></li>
-                <li><a href="index.html#tour" data-i18n="nav_tour">El Tour</a></li>
-                <li><a href="index.html#itinerario" data-i18n="nav_itinerary">Itinerario</a></li>
-                <li><a href="index.html#politicas" data-i18n="nav_policies">Políticas</a></li>
-                <li><a href="preguntas-frecuentes.html" data-i18n="nav_faq">Preguntas Frecuentes</a></li>
-                <li><a href="index.html#contacto" class="btn-primary" data-i18n="nav_book">Reservar</a></li>
+                <li><a href="../Tour-islas-guanape/Tour-islas-guanape.html" data-i18n="nav_tour">Tour Islas Guañape</a>
+                </li>
+                <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html" data-i18n="nav_faq">Preguntas
+                        Frecuentes</a></li>
+                <li>
+                    <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        style="font-size: 1.4rem; color: #1877F2; margin-right: 15px; display: flex; align-items: center;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li><a href="../Inicio/index.html#contacto" class="btn-primary" data-i18n="nav_book">Reservar</a></li>
                 <li>
                     <select id="language-selector" class="lang-select">
                         <option value="es">ES</option>
@@ -164,8 +171,8 @@
 
     <!-- Header Section -->
     <header class="hero"
-        style="height: 50vh; min-height: 400px; background: url('assets/Imagen14.jpeg') center/cover no-repeat fixed;">
-        <div class="hero-overlay"></div>
+        style="height: 50vh; min-height: 400px; background: url('../assets/Imagen6.jpeg') center/cover no-repeat fixed;">
+        <div class="hero-overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
         <div class="hero-content container" data-aos="fade-up" style="margin-top: 60px;">
             <h1 data-i18n="about_hero_title">Quiénes <span class="text-gradient">Somos</span></h1>
             <p data-i18n="about_hero_subtitle"
@@ -204,13 +211,13 @@
             <!-- Images Grid -->
             <div class="vision-images">
                 <div class="vision-img-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/Imagen9.jpeg" alt="Equipo de Acuaturis en lancha">
+                    <img src="../assets/Imagen9.jpeg" alt="Equipo de Acuaturis en lancha">
                 </div>
                 <div class="vision-img-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/Imagen20.jpeg" alt="Lobos marinos en su hábitat">
+                    <img src="../assets/Imagen20.jpeg" alt="Lobos marinos en su hábitat">
                 </div>
                 <div class="vision-img-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/Imagen21.jpeg" alt="Vista de las Islas Guañape">
+                    <img src="../assets/Imagen21.jpeg" alt="Vista de las Islas Guañape">
                 </div>
             </div>
         </div>
@@ -222,8 +229,8 @@
             <h3
                 style="color: white; margin-bottom: 10px; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem;">
                 ACUATURIS <span style="color: var(--primary);">SAC</span></h3>
-            <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">La joya marina de la región La Libertad.
-            </p>
+            <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">Tu mejor opción para visitar Islas
+                Guañape.</p>
             <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px;">
                 <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
                     style="color: white; font-size: 1.2rem; transition: color 0.3s;"
@@ -243,8 +250,8 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/translations.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             AOS.init({

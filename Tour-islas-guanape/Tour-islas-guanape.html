@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Islas Guañape | ACUATURIS SAC</title>
+    <meta name="description" content="Detalles e Itinerario del Tour en las Islas Guañape.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">ACUATURIS <span class="highlight">SAC</span></a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="../quienes-somos/quienes-somos.html" data-i18n="nav_about">Quiénes Somos</a></li>
+                <li><a href="../Tour-islas-guanape/Tour-islas-guanape.html" class="active"
+                        style="color: var(--primary);" data-i18n="nav_tour">Tour Islas Guañape</a></li>
+                <li><a href="../preguntas-frecuentes/preguntas-frecuentes.html" data-i18n="nav_faq">Preguntas
+                        Frecuentes</a></li>
+                <li>
+                    <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        style="font-size: 1.4rem; color: #1877F2; margin-right: 15px; display: flex; align-items: center;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li><a href="../Inicio/index.html#contacto" class="btn-primary" data-i18n="nav_book">Reservar</a></li>
+                <li>
+                    <select id="language-selector" class="lang-select">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <option value="it">IT</option>
+                        <option value="de">DE</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero"
+        style="height: 50vh; min-height: 400px; background: url('../assets/Imagen14.jpeg') center/cover no-repeat fixed;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container" data-aos="fade-up" style="margin-top: 60px;">
+            <h1 data-i18n="nav_tour">Tour Islas <span class="text-gradient">Guañape</span></h1>
+            <p data-i18n="hero_subtitle"
+                style="font-size: 1.2rem; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Una experiencia única para amantes de la naturaleza, fotografía y aventura marina.</p>
+            <div class="hero-buttons">
+                <a href="../Inicio/index.html#contacto" class="btn-primary" data-i18n="hero_btn_book_tour">RESERVAR
+                    AHORA</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section about" style="padding: 60px 0;">
+        <div class="container" data-aos="fade-up">
+            <div class="included-box"
+                style="margin: 0 auto; background: #e3f2fd; padding: 40px; border-radius: 15px; border-left: 5px solid var(--primary); max-width: 800px;">
+                <h3 style="color: var(--primary); margin-bottom: 25px; font-size: 1.8rem; text-align: center;"
+                    data-i18n="included_title">¿Qué incluye el tour?</h3>
+                <ul class="feature-list"
+                    style="margin-top: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; font-size: 1.1rem;">
+                    <li><i class="fas fa-ticket-alt"></i> <span data-i18n="included_1">Entrada a la reserva</span></li>
+                    <li><i class="fas fa-anchor"></i> <span data-i18n="included_2">Entrada al muelle de Puerto
+                            Morín</span></li>
+                    <li><i class="fas fa-ship"></i> <span data-i18n="included_3">Transporte en embarcación
+                            (lancha)</span></li>
+                    <li><i class="fas fa-user-tie"></i> <span data-i18n="included_4">Tour guiado</span></li>
+                    <li><i class="fas fa-life-ring"></i> <span data-i18n="included_5">Chaleco salvavidas</span></li>
+                    <li><i class="fas fa-medkit"></i> <span data-i18n="included_6">Botiquín de Primeros Auxilios</span>
+                    </li>
+                    <li><i class="fas fa-shield-alt"></i> <span data-i18n="included_7">Póliza de seguro contra
+                            accidentes</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section id="itinerario" class="section itinerary-section" style="background-color: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title center" data-aos="fade-up" data-i18n="itinerary_title">Tu Itinerario</h2>
+            <p class="section-subtitle center" data-aos="fade-up" data-i18n="itinerary_subtitle">Así será tu día de
+                aventura con nosotros.</p>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h3>09:00 AM</h3>
+                        <p data-i18n="itinerary_1">Reunión en el punto de encuentro en el muelle de Puerto Morín. Charla
+                            de seguridad y entrega de chalecos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-content">
+                        <h3>09:30 AM</h3>
+                        <p data-i18n="itinerary_2">Zarpe hacia las Islas Guañape. Disfruta de la brisa marina y el
+                            paisaje costero.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <h3>10:15 AM</h3>
+                        <p data-i18n="itinerary_3">Llegada a las islas. Avistamiento de la colonia de Lobos Marinos,
+                            Pingüinos de Humboldt y aves guaneras.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-content">
+                        <h3>12:00 PM</h3>
+                        <p data-i18n="itinerary_4">Retorno a Puerto Morín. Tiempo para fotos y compartir experiencias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Route Section -->
+    <section id="recorrido" class="section route-section" style="padding: 60px 0; background-color: white;">
+        <div class="container">
+            <h2 class="section-title center" data-aos="fade-up" data-i18n="route_title">Nuestro Recorrido</h2>
+            <p class="section-subtitle center" data-aos="fade-up" data-i18n="route_subtitle"
+                style="margin-bottom: 40px; font-size: 1.1rem; color: #555; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Conoce la ruta de nuestra aventura marina. Desde Puerto Morín hasta las Islas Guañape, con paradas
+                estratégicas para el avistamiento de lobos marinos, aves guaneras y pingüinos de Humboldt.
+            </p>
+            <div data-aos="zoom-in" style="text-align: center; margin: 0 auto;">
+                <img src="../assets/Imagen24.png" alt="Mapa del recorrido a las Islas Guañape"
+                    style="max-width: 100%; max-height: 600px; height: auto; display: inline-block; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Policies Section -->
+    <section id="politicas" class="section policies-section" style="background-color: #f8fafc; padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title center" data-aos="fade-up" data-i18n="policies_title">Políticas de Reserva,
+                Cancelación y Condiciones del Tour</h2>
+            <div class="policies-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div class="policy-card" data-aos="fade-up"
+                    style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid var(--primary);">
+                    <h3
+                        style="color: var(--primary); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-users" style="font-size: 1.2rem;"></i> <span
+                            data-i18n="policy_h1">Confirmación</span>
+                    </h3>
+                    <p data-i18n="policy_1" style="color: #4a5568; line-height: 1.6;">El tour se confirma con un mínimo
+                        de 14 personas.</p>
+                </div>
+
+                <div class="policy-card" data-aos="fade-up" data-aos-delay="100"
+                    style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid #f59e0b;">
+                    <h3 style="color: #f59e0b; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-cloud-sun" style="font-size: 1.2rem;"></i> <span data-i18n="policy_h2">Clima y
+                            Seguridad</span>
+                    </h3>
+                    <p data-i18n="policy_2" style="color: #4a5568; line-height: 1.6; margin-bottom: 10px;">La salida
+                        está sujeta a condiciones climáticas y estado del mar.</p>
+                    <p data-i18n="policy_3" style="color: #4a5568; line-height: 1.6;">La empresa puede reprogramar por
+                        seguridad si la marea no es adecuada.</p>
+                </div>
+
+                <div class="policy-card" data-aos="fade-up" data-aos-delay="200"
+                    style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid #10b981;">
+                    <h3 style="color: #10b981; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-money-check-alt" style="font-size: 1.2rem;"></i> <span
+                            data-i18n="policy_h3">Pagos y Reembolsos</span>
+                    </h3>
+                    <p data-i18n="policy_4" style="color: #4a5568; line-height: 1.6; margin-bottom: 8px;">La reserva se
+                        confirma con un adelanto previo.</p>
+                    <p data-i18n="policy_5" style="color: #4a5568; line-height: 1.6; margin-bottom: 8px;">El saldo
+                        restante debe cancelarse antes del embarque.</p>
+                    <p data-i18n="policy_6" style="color: #4a5568; line-height: 1.6; font-weight: 600;">No presentarse
+                        el día del tour implica pérdida del adelanto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #1a202c; color: #e2e8f0; text-align: center; padding: 40px 0;">
+        <div class="container">
+            <h3
+                style="color: white; margin-bottom: 10px; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem;">
+                ACUATURIS <span style="color: var(--primary);">SAC</span></h3>
+            <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">Tu mejor opción para visitar Islas
+                Guañape.</p>
+            <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px;">
+                <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
+                    style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                        class="fab fa-tiktok"></i></a>
+            </div>
+            <p style="font-size: 0.85rem; border-top: 1px solid #334155; padding-top: 20px; color: #64748b;">&copy; 2026
+                ACUATURIS SAC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                duration: 800,
+                offset: 100,
+                once: true
+            });
+        });
+    </script>
+    <a href="https://wa.me/51961020784?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Estoy%20interesado%20en%20el%20tour%20a%20las%20Islas%20Gua%C3%B1ape%20y%20quisiera%20informaci%C3%B3n%20sobre%20disponibilidad%20y%20reservas."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
