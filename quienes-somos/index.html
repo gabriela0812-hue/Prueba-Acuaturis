@@ -65,70 +65,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <style>
-        /* Hero section is now handled by styles.css classes */
-        .about-page-content {
-            padding: 80px 0;
-            background-color: #f8fafc;
-        }
-
-        .about-text-content {
-            background-color: #2b3a55;
-            /* Color similar al de la imagen proporcionada */
-            color: white;
-            padding: 50px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-bottom: 50px;
-        }
-
-        .about-text-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: white;
-            font-weight: 800;
-        }
-
-        .about-text-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #e2e8f0;
-        }
-
-        .about-text-content p:last-child {
-            font-weight: 600;
-            font-size: 1.3rem;
-            margin-bottom: 0;
-            margin-top: 30px;
-        }
-
-        .vision-images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .vision-img-card {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .vision-img-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .vision-img-card:hover img {
-            transform: scale(1.05);
-        }
-    </style>
 </head>
 
 <body>
@@ -170,10 +106,10 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="hero"
-        style="height: 50vh; min-height: 400px; background: url('../assets/Imagen6.jpeg') center/cover no-repeat fixed;">
+    <header class="hero hero-subpage"
+        style="background: url('../assets/Imagen6.jpeg') center/cover no-repeat fixed;">
         <div class="hero-overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
-        <div class="hero-content container" data-aos="fade-up" style="margin-top: 60px;">
+        <div class="hero-content container" data-aos="fade-up">
             <h1 data-i18n="about_hero_title">Quiénes <span class="text-gradient">Somos</span></h1>
             <p data-i18n="about_hero_subtitle"
                 style="font-size: 1.2rem; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto;">
