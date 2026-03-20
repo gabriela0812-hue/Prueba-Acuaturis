@@ -9,7 +9,7 @@
     --white: #FFFFFF;
     --glass: rgba(255, 255, 255, 0.1);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     --whatsapp: #25D366;
 }
 
@@ -383,6 +383,33 @@ body {
 .timeline-content h3 {
     color: var(--primary);
     margin-bottom: 10px;
+}
+
+/* Timeline Responsive Fixes */
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        margin-bottom: 30px;
+    }
+
+    .timeline-item::after {
+        left: 21px;
+        right: auto;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0%;
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: 21px;
+    }
 }
 
 /* Gallery Section */
@@ -865,6 +892,11 @@ body {
         z-index: 1001;
     }
 
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
         margin-top: 40px; /* Prevent overlap with fixed header */
@@ -883,12 +915,19 @@ body {
     }
 
     .hero-subpage {
-        height: 40vh !important;
-        min-height: 300px !important;
+        height: 60vh !important;
+        min-height: 350px !important;
+        text-align: center;
     }
 
     .hero-subpage h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        padding: 0 15px;
+    }
+
+    .hero-subpage p {
+        font-size: 1.1rem !important;
+        padding: 0 15px;
     }
 
     .about-grid,
