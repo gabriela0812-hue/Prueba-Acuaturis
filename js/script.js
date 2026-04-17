@@ -166,6 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Listener for ESNNA Images (esnna.html)
+    const esnnaGallery = document.querySelector('.esnna-gallery');
+    if (esnnaGallery) {
+        esnnaGallery.addEventListener('click', (e) => {
+            const img = e.target.closest('img');
+            if (img) openLightbox(img);
+        });
+    }
+
     if (closeBtn) {
         closeBtn.addEventListener('click', () => {
             if (lightbox) lightbox.style.display = "none";

@@ -199,25 +199,34 @@
 
     <!-- Footer -->
     <footer style="background-color: #1a202c; color: #e2e8f0; text-align: center; padding: 40px 0;">
-        <div class="container">
-            <h3
-                style="color: white; margin-bottom: 10px; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem;">
-                ACUATURIS <span style="color: var(--primary);">SAC</span></h3>
-            <p style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">Tu mejor opción para visitar Islas
-                Guañape.</p>
-            <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 25px;">
-                <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
-                    style="color: white; font-size: 1.2rem; transition: color 0.3s;"
-                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
-                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
-                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
-                        class="fab fa-tiktok"></i></a>
+        <div class="container footer-container">
+            <div class="footer-main" style="margin-bottom: 25px;">
+                <div class="footer-logo">
+                    <h3 style="color: white; margin-bottom: 10px; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem;">ACUATURIS <span class="highlight" style="color: var(--primary);">SAC</span></h3>
+                    <p data-i18n="footer_subtitle" style="margin-bottom: 20px; font-size: 0.95rem; color: #94a3b8;">Tu mejor opción para visitar Islas Guañape.</p>
+                </div>
+                <div class="footer-social" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <div style="display: flex; gap: 15px;">
+                        <a href="https://www.facebook.com/share/1S6qyKS7hv/" target="_blank" rel="noopener noreferrer"
+                            style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white; font-size: 1.2rem; transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='white'"><i
+                                class="fab fa-tiktok"></i></a>
+                    </div>
+                    <a href="../esnna.html" 
+                        style="color: white; font-size: 0.9rem; transition: all 0.3s; display: flex; align-items: center; gap: 8px; text-decoration: none; border: 1px solid rgba(255,255,255,0.3); padding: 8px 15px; border-radius: 50px; font-weight: 600;"
+                        onmouseover="this.style.color='var(--secondary)'; this.style.borderColor='var(--secondary)'; this.style.background='rgba(255,255,255,0.1)'" 
+                        onmouseout="this.style.color='white'; this.style.borderColor='rgba(255,255,255,0.3)'; this.style.background='transparent'">
+                        <i class="fas fa-shield-alt"></i> <span data-i18n="footer_esnna_code">CÓDIGO CONDUCTO ESNNA</span>
+                    </a>
+                </div>
             </div>
-            <p style="font-size: 0.85rem; border-top: 1px solid #334155; padding-top: 20px; color: #64748b;">&copy; 2026
+            <p style="font-size: 0.85rem; border-top: 1px solid #334155; padding-top: 20px; color: #64748b;" data-i18n="footer_rights">&copy; 2026
                 ACUATURIS SAC. Todos los derechos reservados.</p>
         </div>
     </footer>
